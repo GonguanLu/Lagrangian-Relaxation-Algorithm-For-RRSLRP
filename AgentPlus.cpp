@@ -29,7 +29,7 @@ void g_ProgramStop()
 };
 
 // step 1: read network_trip data
-//
+
 #define _MAX_NUMBER_OF_NODES 50
 #define _MAX_NUMBER_OF_LINKS 200
 #define _MAX_NUMBER_OF_TIME_INTERVALS 125
@@ -313,7 +313,7 @@ float g_to_node_cost_used_for_upper_bound[_MAX_NUMBER_OF_NODES][_MAX_NUMBER_OF_T
 float g_vertex_waiting_cost[_MAX_NUMBER_OF_NODES][_MAX_NUMBER_OF_TIME_INTERVALS] = { 0 };
 int g_vertex_visit_count[_MAX_NUMBER_OF_NODES][_MAX_NUMBER_OF_TIME_INTERVALS] = { 0 };
 
-
+//Dynamic Programming Algoirthm for single vehicle routing problem with recharging station
 float g_optimal_resource_space_time_dynamic_programming_shortest_path(
 	int vehicle_id,
 	float arc_cost[_MAX_NUMBER_OF_LINKS][_MAX_NUMBER_OF_TIME_INTERVALS],
@@ -904,6 +904,7 @@ void g_find_current_depot_solution(int bigK)
 
 
 float M = 100.0;
+//Dynamic Programming Algorithm for Knapsack subproblem
 float g_knapsack_problem(float station_capacity_price[_MAX_NUMBER_OF_NODES],float total_budget,int g_number_of_depot)
 {
 	int interval=total_budget/10;
@@ -1008,7 +1009,7 @@ float MVRP_optimal_value;
 float g_depot_link_cost[_MAX_NUMBER_OF_LINKS]={0};
 float g_depot_link_cost_UB[_MAX_NUMBER_OF_LINKS]={0};
 
-
+//Lagrangina Relaxation Algorithm Framework
 float g_Optimization_Lagrangian_Method_Resource_Constrained_Location_Routing_Problem()
 {
 	cout << "Preparation......" << endl;
