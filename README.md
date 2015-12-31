@@ -1,0 +1,3 @@
+# Lagrangian-Relaxation-Algorithm-For-RRSLRP
+To solve the RRS-LRP problem based on resource-space-time network, we developed a Lagrangian Relaxation Algorithm framework to decompose the origin problem into classic knapsack sub-problem and vehicle routing problem with recharging station (VRP-RS). The knapsack problem is solved by dynamic programming algorithm and a dynamic programming algorithm in RST network is developed to solve the VRP-RS. The dual problem of adjusting the Lagrangian multipliers was solved by an ascent method using sub-gradients approach. The algorithm framework is naturally suitable for parallel computing and distributed computing techniques due to the decomposition structure.
+.
