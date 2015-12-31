@@ -1193,16 +1193,11 @@ float g_Optimization_Lagrangian_Method_Resource_Constrained_Location_Routing_Pro
 			}
 		}
 
-
-
-
 		//step 2.1: shortest path for each vehicles
 
 		bool lower_bound_continue_flag = true;
 		int g_number_of_required_vehicles = g_number_of_vehicles;
 
-
-		//scan all vehicle to compute the supply
 		//reset supply to demand
 		for(int i = 0;i < g_number_of_agents; i++)
 		{
@@ -1215,7 +1210,6 @@ float g_Optimization_Lagrangian_Method_Resource_Constrained_Location_Routing_Pro
 			
 			if(!lower_bound_continue_flag) //if all demand are delivered
 				break;
-
 
 			if(g_location_routing_debugging_flag)
 			fprintf(g_pFileDebugLog, "$$$$$ LINK COST FOR Vehicle $$$$$\n");
@@ -1386,7 +1380,6 @@ float g_Optimization_Lagrangian_Method_Resource_Constrained_Location_Routing_Pro
  		int TemporaryStationRepeatRecord=-1;
 		for(int v = 1;v <= g_number_of_required_vehicles; v++)
 		{
-			//find_capacity_usage_flag=false;
 
 			for(int i = 0; i < g_vehicle_path_number_of_nodes[v]-1; i++)
 			{
@@ -1417,10 +1410,8 @@ float g_Optimization_Lagrangian_Method_Resource_Constrained_Location_Routing_Pro
 		}
 
 		//for making a negative lower bound to positive 
-
 		g_lower_bound[LR_iteration] += bound_adjust;
 
-		
 		cout << "Lagrangian Iteration " << LR_iteration << ", Lower Bound:" << g_lower_bound[LR_iteration] << endl;
 		fprintf(g_pFileDebugLog, "________current LB:%.2f ----->\n",g_lower_bound[LR_iteration]);
 		fprintf(g_pFileDebugLog, "<<<<<< LOWER BOUND <<<<<<<<\n");
@@ -1668,7 +1659,7 @@ float g_Optimization_Lagrangian_Method_Resource_Constrained_Location_Routing_Pro
 					link = g_get_link_no_based_on_from_node_to_node(g_vehicle_path_node_sequence_for_upper_bound[v][i], g_vehicle_path_node_sequence_for_upper_bound[v][i+1]);
 					if(link != -1)
 					{
-						vehicle_transportation_cost += 0.5 * g_link_travel_cost[link];
+						vehicle_transportation_cost +=  g_link_travel_cost[link];
 					}
 				}
 				g_upper_bound[LR_iteration] += vehicle_transportation_cost;
@@ -1730,15 +1721,11 @@ float g_Optimization_Lagrangian_Method_Resource_Constrained_Location_Routing_Pro
 		g_objective_function_value[LR_iteration]=g_upper_bound[LR_iteration];
 		fprintf(g_pFileDebugLog, "The value of Objective function: %.4f\n",g_upper_bound[LR_iteration]);
 		g_upper_bound[LR_iteration] += bound_adjust ;
-		////ub end
+		////upper bound calculation end
 		fprintf(g_pFileDebugLog, "________current UB:%.2f ----->\n",g_upper_bound[LR_iteration] );
 		fprintf(g_pFileDebugLog, "<----- UPPER BOUND -----\n");
 		cout << "Lagrangian Iteration " << LR_iteration << ", upper Bound:" << g_upper_bound[LR_iteration] << endl;
 
-		
-
-		
-		
 		//step 4: gap calculation
 		g_gap[LR_iteration] = (g_upper_bound[LR_iteration] - g_lower_bound[LR_iteration]) / g_upper_bound[LR_iteration];
 		if(LR_iteration>6)
@@ -1884,7 +1871,7 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 	g_GenerateGAMSInputData();
 
 	g_pFileDebugLog = fopen("D:\\Debug.txt", "w");
-	g_ReadInputData("D:\\VRPDP.csv");
+	g_ReadInputData("D:\\SiouxFalls.csv");
 	
 	g_allocate_memory();
 
