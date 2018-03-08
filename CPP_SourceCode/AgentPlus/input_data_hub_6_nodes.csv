@@ -1,0 +1,48 @@
+[Node],name,node_id,QEM_reference_node_id,control_type,control_type_name,x,y,geometry,,,,,,,,,,,,,
+,,1,0,0,unknown_control,0,0,"<Point><coordinates>0.000000,0.000000</coordinates></Point>",,,,,,,,,,,,,
+,,2,0,0,unknown_control,1.8314,0,"<Point><coordinates>1.831400,0.000000</coordinates></Point>",,,,,,,,,,,,,
+,,3,0,0,unknown_control,0,3.6628,"<Point><coordinates>0.000000,3.662800</coordinates></Point>",,,,,,,,,,,,,
+,,4,0,0,unknown_control,1.8314,3.6628,"<Point><coordinates>1.831400,3.662800</coordinates></Point>",,,,,,,,,,,,,
+,,5,0,0,unknown_control,0.9157,0.9157,"<Point><coordinates>0.915700,0.915700</coordinates></Point>",,,,,,,,,,,,,
+,,6,0,0,unknown_control,0.9157,2.7471,"<Point><coordinates>0.915700,2.747100</coordinates></Point>",,,,,,,,,,,,,
+[Link],name,link_id,link_key,speed_sensor_id,count_sensor_id,from_node_id,to_node_id,link_type_name,direction,length,number_of_lanes,travel_time,speed_limit,capacity,link_type,jam_density,wave_speed,mode_code,grade,geometry,original_geometry
+,(null),0,,,,1,2,Major arterial,1,2,2,2,60,1,4,120,12,,0,"<LineString><coordinates>0.000000,-0.015151,0.0 1.831400,-0.015151,0.0</coordinates></LineString>","<LineString><coordinates>0.000000,-0.015151,0.0 1.831400,-0.015151,0.0</coordinates></LineString>"
+,(null),0,,,,1,3,Highway/Expressway,1,4,2,4,60,1,2,120,12,,0,"<LineString><coordinates>0.015151,0.000000,0.0 0.015151,3.662800,0.0</coordinates></LineString>","<LineString><coordinates>0.015151,0.000000,0.0 0.015151,3.662800,0.0</coordinates></LineString>"
+,(null),0,,,,1,5,Major arterial,1,1,4,1,60,1,4,120,12,,0,"<LineString><coordinates>0.010714,-0.010714,0.0 0.926414,0.904986,0.0</coordinates></LineString>","<LineString><coordinates>0.010714,-0.010714,0.0 0.926414,0.904986,0.0</coordinates></LineString>"
+,(null),0,,,,2,1,Major arterial,1,2,2,2,60,1,4,120,12,,0,"<LineString><coordinates>1.831400,0.015151,0.0 -0.000000,0.015151,0.0</coordinates></LineString>","<LineString><coordinates>1.831400,0.015151,0.0 -0.000000,0.015151,0.0</coordinates></LineString>"
+,(null),0,,,,2,4,Highway/Expressway,1,4,2,4,60,1,2,120,12,,0,"<LineString><coordinates>1.846551,0.000000,0.0 1.846551,3.662800,0.0</coordinates></LineString>","<LineString><coordinates>1.846551,0.000000,0.0 1.846551,3.662800,0.0</coordinates></LineString>"
+,(null),0,,,,2,5,Major arterial,1,1,2,1,60,1,4,120,12,,0,"<LineString><coordinates>1.842114,0.010714,0.0 0.926414,0.926414,0.0</coordinates></LineString>","<LineString><coordinates>1.842114,0.010714,0.0 0.926414,0.926414,0.0</coordinates></LineString>"
+,(null),0,,,,3,1,Highway/Expressway,1,4,2,4,60,1,2,120,12,,0,"<LineString><coordinates>-0.015151,3.662800,0.0 -0.015151,-0.000000,0.0</coordinates></LineString>","<LineString><coordinates>-0.015151,3.662800,0.0 -0.015151,-0.000000,0.0</coordinates></LineString>"
+,(null),0,,,,3,4,Major arterial,1,2,2,2,60,1,4,120,12,,0,"<LineString><coordinates>0.000000,3.647649,0.0 1.831400,3.647649,0.0</coordinates></LineString>","<LineString><coordinates>0.000000,3.647649,0.0 1.831400,3.647649,0.0</coordinates></LineString>"
+,(null),0,,,,3,6,Major arterial,1,1,2,1,60,1,4,120,12,,0,"<LineString><coordinates>-0.010714,3.652086,0.0 0.904986,2.736387,0.0</coordinates></LineString>","<LineString><coordinates>-0.010714,3.652086,0.0 0.904986,2.736387,0.0</coordinates></LineString>"
+,(null),0,,,,4,2,Highway/Expressway,1,4,2,4,60,1,2,120,12,,0,"<LineString><coordinates>1.816249,3.662800,0.0 1.816249,-0.000000,0.0</coordinates></LineString>","<LineString><coordinates>1.816249,3.662800,0.0 1.816249,-0.000000,0.0</coordinates></LineString>"
+,(null),0,,,,4,3,Major arterial,1,2,2,2,60,1,4,120,12,,0,"<LineString><coordinates>1.831400,3.677951,0.0 -0.000000,3.677951,0.0</coordinates></LineString>","<LineString><coordinates>1.831400,3.677951,0.0 -0.000000,3.677951,0.0</coordinates></LineString>"
+,(null),0,,,,4,6,Major arterial,1,1,2,1,60,1,4,120,12,,0,"<LineString><coordinates>1.820686,3.673514,0.0 0.904986,2.757814,0.0</coordinates></LineString>","<LineString><coordinates>1.820686,3.673514,0.0 0.904986,2.757814,0.0</coordinates></LineString>"
+,(null),0,,,,5,1,Major arterial,1,1,2,1,60,1,4,120,12,,0,"<LineString><coordinates>0.904986,0.926414,0.0 -0.010714,0.010714,0.0</coordinates></LineString>","<LineString><coordinates>0.904986,0.926414,0.0 -0.010714,0.010714,0.0</coordinates></LineString>"
+,(null),0,,,,5,2,Major arterial,1,1,2,1,60,1,4,120,12,,0,"<LineString><coordinates>0.904986,0.904986,0.0 1.820686,-0.010714,0.0</coordinates></LineString>","<LineString><coordinates>0.904986,0.904986,0.0 1.820686,-0.010714,0.0</coordinates></LineString>"
+,(null),0,,,,5,6,Freeway,1,2,6,2,60,1,1,220,12,,0,"<LineString><coordinates>0.930851,0.915700,0.0 0.930851,2.747100,0.0</coordinates></LineString>","<LineString><coordinates>0.930851,0.915700,0.0 0.930851,2.747100,0.0</coordinates></LineString>"
+,(null),0,,,,6,3,Major arterial,1,1,2,1,60,1,4,120,12,,0,"<LineString><coordinates>0.926414,2.757814,0.0 0.010714,3.673514,0.0</coordinates></LineString>","<LineString><coordinates>0.926414,2.757814,0.0 0.010714,3.673514,0.0</coordinates></LineString>"
+,(null),0,,,,6,4,Major arterial,1,1,4,1,60,1,4,120,12,,0,"<LineString><coordinates>0.926414,2.736387,0.0 1.842114,3.652086,0.0</coordinates></LineString>","<LineString><coordinates>0.926414,2.736387,0.0 1.842114,3.652086,0.0</coordinates></LineString>"
+,(null),0,,,,6,5,Highway/Expressway,1,2,3,2,60,1,2,120,12,,0,"<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>","<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>"
+[Agent],agent_id,from_node_id,to_node_id,departure_time_start,departure_time_end,arrival_time_start,arrival_time_end,,,,,,,,,,,,,,
+,0,1,4,0,1,4,8,,,,,,,,,,,,,,
+,1,1,4,0,1,6,10,,,,,,,,,,,,,,
+,2,1,4,0,3,8,12,,,,,,,,,,,,,,
+,3,2,3,2,3,10,14,,,,,,,,,,,,,,
+,4,1,4,4,9,14,18,,,,,,,,,,,,,,
+[Passenger],Passenger_id,from_node_id,to_node_id,departure_time_start,departure_time_end,arrival_time_start,arrival_time_end,,,,,,,,,,,,,,
+,0,1,4,0,1,4,8,,,,,,,,,,,,,,
+,1,1,4,0,1,6,10,,,,,,,,,,,,,,
+,2,1,4,0,3,8,12,,,,,,,,,,,,,,
+,3,2,3,2,3,10,14,,,,,,,,,,,,,,
+,4,1,4,4,9,14,18,,,,,,,,,,,,,,
+,5,1,4,0,1,4,8,,,,,,,,,,,,,,
+,6,1,4,0,1,6,10,,,,,,,,,,,,,,
+,7,1,4,0,3,8,12,,,,,,,,,,,,,,
+,8,2,3,2,3,10,14,,,,,,,,,,,,,,
+,9,1,4,4,9,14,18,,,,,,,,,,,,,,
+,10,1,4,0,1,4,8,,,,,,,,,,,,,,
+,11,1,4,0,1,6,10,,,,,,,,,,,,,,
+,12,1,4,0,3,8,12,,,,,,,,,,,,,,
+,13,2,3,2,3,10,14,,,,,,,,,,,,,,
+,14,1,4,4,9,14,18,,,,,,,,,,,,,,
