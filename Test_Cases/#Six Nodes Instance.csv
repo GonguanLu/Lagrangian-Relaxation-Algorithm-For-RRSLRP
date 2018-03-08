@@ -1,0 +1,44 @@
+[Node],name,node_id,QEM_reference_node_id,successor_node,node_type,control_type_name,x,y,geometry,instruction,capacity,cost,,,,,,,,,,,,,,,,,
+,,1,0,0,1,unknown_control,0,0,"<Point><coordinates>0.000000,0.000000</coordinates></Point>",normal node,0,0,,,,,,,,,,,,,,,,,
+,,2,0,0,1,unknown_control,1.8314,0,"<Point><coordinates>1.831400,0.000000</coordinates></Point>",normal node,0,0,,,,,,,,,,,,,,,,,
+,,3,0,0,0,unknown_control,0,3.6628,"<Point><coordinates>0.000000,3.662800</coordinates></Point>",depot node,2,11,,,,,,,,,,,,,,,,,
+,,4,0,0,1,unknown_control,1.8314,3.6628,"<Point><coordinates>1.831400,3.662800</coordinates></Point>",normal node,0,0,,,,,,,,,,,,,,,,,
+,,5,0,0,1,unknown_control,0.9157,0.9157,"<Point><coordinates>0.915700,0.915700</coordinates></Point>",normal node,0,0,,,,,,,,,,,,,,,,,
+,,6,0,0,1,unknown_control,0.9157,2.7471,"<Point><coordinates>0.915700,2.747100</coordinates></Point>",normal node,0,0,,,,,,,,,,,,,,,,,
+,,7,0,0,1,unknown_control,0.9157,2.7471,"<Point><coordinates>0.915700,2.747100</coordinates></Point>",normal node,0,0,,,,,,,,,,,,,,,,,
+,,8,0,0,0,unknown_control,0.9157,2.7471,"<Point><coordinates>0.915700,2.747100</coordinates></Point>",depot node,2,12,,,,,,,,,,,,,,,,,
+,,9,0,0,2,unknown_control,0.9157,2.7471,"<Point><coordinates>0.915700,2.747100</coordinates></Point>",super node,0,0,,,,,,,,,,,,,,,,,
+[Link],name,link_id,link_key,speed_sensor_id,,count_sensor_id,from_node_id,to_node_id,link_type,direction,travel_time,number_of_lanes,travel_time,min_travel_time,travel_cost,speed_limit,capacity,link_type,jam_density,wave_speed,resource_cost,capacity,geometry,original_geometry,departure_time_start,departure_time_end,arrival_time_start,arrival_time_end,link_demand
+,(null),0,,,,,1,2,3,1,2,2,2,2,2,60,1,3,120,12,4,0,"<LineString><coordinates>0.000000,-0.015151,0.0 1.831400,-0.015151,0.0</coordinates></LineString>","<LineString><coordinates>0.000000,-0.015151,0.0 1.831400,-0.015151,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,1,3,3,1,1,2,1,1,1,60,1,3,120,12,2,0,"<LineString><coordinates>0.015151,0.000000,0.0 0.015151,3.662800,0.0</coordinates></LineString>","<LineString><coordinates>0.015151,0.000000,0.0 0.015151,3.662800,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,1,6,3,1,1,4,1,1,1,60,1,3,120,12,2,0,"<LineString><coordinates>0.010714,-0.010714,0.0 0.926414,0.904986,0.0</coordinates></LineString>","<LineString><coordinates>0.010714,-0.010714,0.0 0.926414,0.904986,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,2,1,3,1,2,2,2,2,2,60,1,3,120,12,4,0,"<LineString><coordinates>1.831400,0.015151,0.0 -0.000000,0.015151,0.0</coordinates></LineString>","<LineString><coordinates>1.831400,0.015151,0.0 -0.000000,0.015151,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,2,5,3,1,2,2,2,2,2,60,1,3,120,12,4,0,"<LineString><coordinates>1.846551,0.000000,0.0 1.846551,3.662800,0.0</coordinates></LineString>","<LineString><coordinates>1.846551,0.000000,0.0 1.846551,3.662800,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,2,6,3,1,1,2,1,1,1,60,1,3,120,12,2,0,"<LineString><coordinates>1.842114,0.010714,0.0 0.926414,0.926414,0.0</coordinates></LineString>","<LineString><coordinates>1.842114,0.010714,0.0 0.926414,0.926414,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,3,4,3,1,2,2,2,2,1,60,1,3,120,12,-16,2,"<LineString><coordinates>0.000000,3.647649,0.0 1.831400,3.647649,0.0</coordinates></LineString>","<LineString><coordinates>0.000000,3.647649,0.0 1.831400,3.647649,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,4,1,3,1,4,2,4,4,4,60,1,3,120,12,8,0,"<LineString><coordinates>1.816249,3.662800,0.0 1.816249,-0.000000,0.0</coordinates></LineString>","<LineString><coordinates>1.816249,3.662800,0.0 1.816249,-0.000000,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,4,5,3,1,2,2,2,2,2,60,1,3,120,12,4,0,"<LineString><coordinates>1.831400,3.677951,0.0 -0.000000,3.677951,0.0</coordinates></LineString>","<LineString><coordinates>1.831400,3.677951,0.0 -0.000000,3.677951,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,4,7,3,1,2,2,2,2,2,60,1,3,120,12,2,0,"<LineString><coordinates>1.820686,3.673514,0.0 0.904986,2.757814,0.0</coordinates></LineString>","<LineString><coordinates>1.820686,3.673514,0.0 0.904986,2.757814,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,6,1,3,1,1,2,1,1,1,60,1,3,120,12,2,0,"<LineString><coordinates>0.926414,2.757814,0.0 0.010714,3.673514,0.0</coordinates></LineString>","<LineString><coordinates>0.926414,2.757814,0.0 0.010714,3.673514,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,6,2,3,1,1,4,1,1,1,60,1,3,120,12,2,0,"<LineString><coordinates>0.926414,2.736387,0.0 1.842114,3.652086,0.0</coordinates></LineString>","<LineString><coordinates>0.926414,2.736387,0.0 1.842114,3.652086,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,6,7,3,1,2,3,2,2,2,60,1,3,120,12,4,0,"<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>","<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,7,3,1,1,2,1,2,2,2,60,1,1,120,12,2,0,"<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>","<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,7,5,1,1,1,1,1,1,1,60,1,1,120,12,2,0,"<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>","<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,7,6,1,1,2,1,2,2,2,60,1,1,120,12,4,0,"<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>","<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,5,2,3,1,4,2,4,4,4,60,1,3,120,12,8,0,"<LineString><coordinates>0.904986,0.926414,0.0 -0.010714,0.010714,0.0</coordinates></LineString>","<LineString><coordinates>0.904986,0.926414,0.0 -0.010714,0.010714,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,5,3,3,1,2,2,2,2,2,60,1,3,120,12,4,0,"<LineString><coordinates>0.904986,0.904986,0.0 1.820686,-0.010714,0.0</coordinates></LineString>","<LineString><coordinates>0.904986,0.904986,0.0 1.820686,-0.010714,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,5,7,3,1,1,6,1,1,1,60,1,3,220,12,2,0,"<LineString><coordinates>0.930851,0.915700,0.0 0.930851,2.747100,0.0</coordinates></LineString>","<LineString><coordinates>0.930851,0.915700,0.0 0.930851,2.747100,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,5,8,3,1,1,6,1,1,1,60,1,3,220,12,2,0,"<LineString><coordinates>0.930851,0.915700,0.0 0.930851,2.747100,0.0</coordinates></LineString>","<LineString><coordinates>0.930851,0.915700,0.0 0.930851,2.747100,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,9,5,1,1,1,1,1,1,1,60,1,1,120,12,2,0,"<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>","<LineString><coordinates>0.900549,2.747100,0.0 0.900549,0.915700,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+,(null),0,,,,,8,9,3,1,1,2,1,1,1,60,1,3,120,12,-16,2,"<LineString><coordinates>0.000000,3.647649,0.0 1.831400,3.647649,0.0</coordinates></LineString>","<LineString><coordinates>0.000000,3.647649,0.0 1.831400,3.647649,0.0</coordinates></LineString>",-1,-1,-1,-1,0
+[Agent],agent_id,from_node_id,to_node_id,departure_time_start,departure_time_end,arrival_time_start,arrival_time_end,scenario_id,demand_amount,,,,,,,,,,,,,,,,,,,,
+,0,5,7,7,9,8,10,0,1,,,,,,,,,,,,,,,,,,,,
+,1,6,1,3,5,4,6,0,1,,,,,,,,,,,,,,,,,,,,
+[Vehicles],vehicle_id,from_node_id,to_node_id,departure_time_start,departure_time_end,arrival_time_start,arrival_time_end,capacity,fuel,,,,,,,,,,,,,,,,,,,,
+,1,2,2,1,2,16,20,1,6,,,,,,,,,,,,,,,,,,,,
+,2,2,2,1,2,16,20,1,6,,,,,,,,,,,,,,,,,,,,
+,3,2,2,1,2,16,20,1,6,,,,,,,,,,,,,,,,,,,,
+[Configuration],number_of_iterations,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+[Budget],total_budget,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,26,,,,,,,,,,,,,,,,,,,,,,,,,,,,
